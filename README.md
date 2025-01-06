@@ -156,7 +156,7 @@ This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) f
 
 
 ## 👥 **Author**  
-- [Your Name](https://github.com/your-username)  
+- [Sanogo Kassoum](https://github.com/kassoumsanogo1)  
 
 For questions or suggestions:  
 - **Email**: kassoum.sanogo@outlook.com  
