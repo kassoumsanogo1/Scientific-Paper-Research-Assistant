@@ -3,13 +3,11 @@ from langchain.agents import AgentExecutor, create_structured_chat_agent
 from langchain_groq import ChatGroq
 from langchain.tools import tool
 from typing import List
-from models import Paper, SearchQuery
+from model.models import Paper, SearchQuery
 import arxiv
 from Bio import Entrez
 import httpx
-import asyncio
-import config
-from config import Config
+from model.config import Config
 
 
 class ResearchTools:

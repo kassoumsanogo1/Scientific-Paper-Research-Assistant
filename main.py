@@ -1,7 +1,7 @@
 # main.py
 from typing import Dict, Any
 import asyncio
-from models import SearchQuery
+from model.models import SearchQuery
 import logging
 from graph.workflow import create_workflow
 import json

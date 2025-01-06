@@ -4,7 +4,7 @@ from langchain.prompts import ChatPromptTemplate
 from langchain.schema.output_parser import StrOutputParser
 from langchain.schema.runnable import Runnable
 from typing import Any, Dict
-from config import Config
+from model.config import Config
 
 def create_analyzer_chain() -> Runnable:
     llm = ChatGroq(
