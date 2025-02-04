@@ -33,7 +33,7 @@ ARAS is an advanced platform designed to assist with scientific research and art
   - **GroqCloud**  
   - **PubMed**  
   - **IEEE Xplore**  
-- At least **4 GB of available RAM**  
+- At least **8 GB of available RAM**  
 
 ---
 
