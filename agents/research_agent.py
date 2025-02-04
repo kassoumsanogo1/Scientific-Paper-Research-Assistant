@@ -8,6 +8,13 @@ import arxiv
 from Bio import Entrez
 import httpx
 from model.config import Config
+from groq import Groq
+from typing import List, Dict
+import sys
+import os
+
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
+from research.arxivapi import fetch_arxiv_data, process_feed
 
 
 class ResearchTools:
@@ -70,3 +77,6 @@ class ResearchTools:
             )
             data = response.json()
             return [self._parse_ieee_article(article) for article in data.get("articles", [])]
+
+
+

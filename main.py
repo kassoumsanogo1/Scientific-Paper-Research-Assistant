@@ -40,17 +40,18 @@ class ARAS:
                 "message": str(e)
             }
 
-async def main():
-    aras = ARAS()
-    query = SearchQuery(
-        query="transformer architecture deep learning",
-        filters={"year": "2023-2024"},
-        limit_per_source=3
-    )
+def main():
+    agent = ResearchAgent()
     
-    result = await aras.process_query(query)
-    print("\n=== Résultat ===")
-    print(json.dumps(result, indent=2))
+    while True:
+        query = input("\nEnter your research query (or 'quit' to exit): ")
+        if query.lower() == 'quit':
+            break
+            
+        print("\nAnalyzing and researching your query...")
+        response = agent.get_research_response(query)
+        print("\nResearch Results:")
+        print(response)
 
 if __name__ == "__main__":
-    asyncio.run(main())
+    main()
